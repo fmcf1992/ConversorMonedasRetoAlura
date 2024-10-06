@@ -1,7 +1,5 @@
-package com.modelos;
-
+package RetoAlura.modelos;
 import com.google.gson.Gson;
-
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -11,7 +9,6 @@ public class ConsultaAPI {
 
     public MonedaAPI consultaAPI(String tipoMoneda){
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/89277e6ccfd197b159a325e8/latest/"+tipoMoneda);
-
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(direccion)

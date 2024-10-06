@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e4cecab-35c2-4fe7-92c0-8086900c3d1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/modelos/ConsultaAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/modelos/ConvertirMoneda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/modelos/MonedaAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RetoAlura/modelos/Casos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RetoAlura/modelos/Historial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RetoAlura/modelos/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RetoAlura/principal/Principal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConversorMonedasRetoAlura.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ConversorMonedasRetoAlura.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/modelos/ConsultaAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RetoAlura/modelos/ConsultaAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/modelos/ConvertirMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RetoAlura/modelos/ConvertirMoneda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/modelos/MonedaAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RetoAlura/modelos/MonedaAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/principal/Principal.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +31,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2n1nSZWpcwCib6mARSsyrbeNveU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,19 +45,38 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Menu.executor": "Run",
     "Application.Principal.executor": "Run",
+    "Application.Principal2.executor": "Run",
+    "Application.RetoAlura.principal.Principal.executor": "Run",
+    "Application.Validar.executor": "Run",
+    "Application.validar.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/michael/Escritorio/Clonados/ScreenMatch",
+    "last_opened_file_path": "/home/michael/Escritorio/Clonados/RadioAlura",
     "onboarding.tips.debug.path": "/home/michael/Escritorio/Clonados/ConversorMonedasRetoAlura/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RetoAlura.principal.Principal">
+    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RetoAlura.modelos.Menu" />
+      <module name="ConversorMonedasRetoAlura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RetoAlura.modelos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.principal.Principal" />
       <module name="ConversorMonedasRetoAlura" />
@@ -66,8 +90,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RetoAlura.principal.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RetoAlura.principal.Principal" />
+      <module name="ConversorMonedasRetoAlura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RetoAlura.principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RetoAlura.principal.Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RetoAlura.principal.Principal" />
+      <module name="ConversorMonedasRetoAlura" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RetoAlura.principal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RetoAlura.principal.Principal" />
+        <item itemvalue="Application.Menu" />
+        <item itemvalue="Application.RetoAlura.principal.Principal" />
         <item itemvalue="Application.Principal" />
       </list>
     </recent_temporary>
