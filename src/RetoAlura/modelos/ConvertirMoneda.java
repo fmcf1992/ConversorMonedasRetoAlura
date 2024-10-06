@@ -7,9 +7,8 @@ public class ConvertirMoneda {
     private final String monedaIngresada;
     private final String monedaAConvertir;
     private final double montoAconvertir;
-    private JsonObject resultado;
+    private JsonObject jsonResultado;
     private String fechaYHora;
-
 
     public ConvertirMoneda(String monedaIngresada, String monedaAConvertir, double montoAconvertir) {
         this.monedaIngresada = monedaIngresada;
@@ -29,24 +28,12 @@ public class ConvertirMoneda {
         return monedaAConvertir;
     }
 
-    public JsonObject getResultado() {
-        return resultado;
+    public JsonObject getJsonResultado() {
+        return jsonResultado;
     }
 
-    private void setResultado(JsonObject resultado) {
-        this.resultado = resultado;
-    }
-
-    public double optenerResultadoJson(){
-        ConsultaAPI consulta = new ConsultaAPI();
-        MonedaAPI moneda =  consulta.consultaAPI(getMonedaIngresada());
-        setResultado(moneda.conversion_rates());
-        if(getResultado().has(getMonedaAConvertir())){
-            return getResultado().get(getMonedaAConvertir()).getAsDouble();
-        }else{
-            System.out.println("Tipo de moneda a convertir no Válida");
-            return 0.0;
-        }
+    private void setJsonResultado(JsonObject jsonResultado) {
+        this.jsonResultado = jsonResultado;
     }
 
     public String getFechaYHora() {
@@ -55,6 +42,18 @@ public class ConvertirMoneda {
 
     public void setFechaYHora(String fechaYHora) {
         this.fechaYHora = fechaYHora;
+    }
+
+    public double optenerResultadoJson(){
+        ConsultaAPI consulta = new ConsultaAPI();
+        MonedaAPI moneda =  consulta.consultaAPI(getMonedaIngresada());
+        setJsonResultado(moneda.conversion_rates());
+        if(getJsonResultado().has(getMonedaAConvertir())){
+            return getJsonResultado().get(getMonedaAConvertir()).getAsDouble();
+        }else{
+            System.out.println("Tipo de moneda a convertir no Válida");
+            return 0.0;
+        }
     }
 
     public double optenerMontoConvertido(){

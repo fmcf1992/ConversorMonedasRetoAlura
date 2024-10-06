@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Menu {
     Scanner teclado = new Scanner(System.in);
+    String listaMonedas = """
+                      1) Dolares 2) Pesos Argentinos 3) Pesos Chileno
+                      4) Soles peruanos 5) Real Brazileño 6) Euros
+                      7) Salir
+                          """;
     public void mostrarMenu(){
         String menu = """
                       ***********************************************
@@ -17,6 +22,22 @@ public class Menu {
                       7) Salir
                       ***********************************************
                       """;
+        System.out.println(menu);
+    }
+    public void mostrarMenuMonedas(){
+        String menu = String.format("""
+                      ***********************************************
+                      Sea bienvenido/a al Conversor de Moneda
+                      ¿Cual es la moneda que desea convertir?
+                      %s """, listaMonedas);
+        System.out.println(menu);
+    }
+    public void mostrarMenuAconvertir(){
+        String menu = String.format("""
+                      ¿A que moneda desea convertir?
+                      %s
+                      ***********************************************
+                      """, listaMonedas);
         System.out.println(menu);
     }
 

@@ -2,9 +2,7 @@ package RetoAlura.principal;
 
 import RetoAlura.modelos.Casos;
 import RetoAlura.modelos.Menu;
-
-import java.util.Scanner;
-
+// principal con estructura basica
 public class Principal {
     public static void main(String[] args) {
         Casos casos = new Casos();
